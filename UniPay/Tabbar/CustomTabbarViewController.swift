@@ -16,6 +16,7 @@ class CustomTabbarViewController: UITabBarController {
         
         let homeVC = UINavigationController(rootViewController: HomeViewController())
         homeVC.title = "หน้าแรก"
+        homeVC.tabBarItem.image = UIImage(named: "home")
         
         let chatVC = UINavigationController(rootViewController: ChatViewController())
         chatVC.title = "แชท"
@@ -26,13 +27,13 @@ class CustomTabbarViewController: UITabBarController {
         let meVC = UINavigationController(rootViewController: MeViewController())
         meVC.title = "ฉัน"
         
-        let guVC = UINavigationController(rootViewController: ShareViewController())
-        meVC.title = "หน้าแรก บุค"
+//        let guVC = UINavigationController(rootViewController: ShareViewController())
+//        meVC.title = "หน้าแรก บุค"
 
         
         viewControllers = [homeVC, chatVC, payVC, meVC]
-        tabBar.tintColor = UIColor.blue
-        tabBar.unselectedItemTintColor = UIColor.black
+        tabBar.tintColor = UIColor(red:0.03, green:0.79, blue:0.66, alpha:1.0)
+        tabBar.unselectedItemTintColor = UIColor.gray
         tabBar.isTranslucent = false
         let topBorder = CALayer()
         topBorder.frame = CGRect(origin: .zero, size: CGSize(width: 1000, height: 0.5))

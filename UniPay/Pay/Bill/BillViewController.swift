@@ -31,6 +31,11 @@ class BillViewController: UIViewController {
     
     @IBAction func handleHome() {
         let homeVC = HomeViewController()
+        if let window = self.view.window {
+            let vc = UINavigationController(rootViewController: CustomTabbarViewController())
+
+            window.rootViewController = vc
+        }
         //self.navigationController?.popToRootViewController(animated: true)
         
     }
