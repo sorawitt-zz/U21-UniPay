@@ -22,6 +22,9 @@
 		FBD64A002094830C00DA81F5 /* PayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD649FE2094830C00DA81F5 /* PayViewController.xib */; };
 		FBD64A042094831C00DA81F5 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD64A022094831C00DA81F5 /* MeViewController.swift */; };
 		FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD64A032094831C00DA81F5 /* MeViewController.xib */; };
+		FBD64A0920948FFF00DA81F5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD64A0720948FFF00DA81F5 /* HomeCollectionViewCell.swift */; };
+		FBD64A0A20948FFF00DA81F5 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD64A0820948FFF00DA81F5 /* HomeCollectionViewCell.xib */; };
+		FBD64A0D2094AB5900DA81F5 /* RSU_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD64A0C2094AB5900DA81F5 /* RSU_light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		FBD649FE2094830C00DA81F5 /* PayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayViewController.xib; sourceTree = "<group>"; };
 		FBD64A022094831C00DA81F5 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		FBD64A032094831C00DA81F5 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		FBD64A0720948FFF00DA81F5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FBD64A0820948FFF00DA81F5 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		FBD64A0C2094AB5900DA81F5 /* RSU_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RSU_light.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			children = (
 				FBD649D020944ADE00DA81F5 /* AppDelegate.swift */,
 				FBD649D220944ADE00DA81F5 /* ViewController.swift */,
+				FBD64A0C2094AB5900DA81F5 /* RSU_light.ttf */,
 				FBD649E62094750600DA81F5 /* Home */,
 				FBD649D420944ADE00DA81F5 /* Main.storyboard */,
 				FBD649EB20947C2700DA81F5 /* Tabbar */,
@@ -93,6 +100,7 @@
 			children = (
 				FBD649E22094750200DA81F5 /* HomeViewController.swift */,
 				FBD649E32094750200DA81F5 /* HomeViewController.xib */,
+				FBD64A0B2094900300DA81F5 /* Home Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -130,6 +138,15 @@
 				FBD64A032094831C00DA81F5 /* MeViewController.xib */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		FBD64A0B2094900300DA81F5 /* Home Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBD64A0720948FFF00DA81F5 /* HomeCollectionViewCell.swift */,
+				FBD64A0820948FFF00DA81F5 /* HomeCollectionViewCell.xib */,
+			);
+			path = "Home Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD64A0D2094AB5900DA81F5 /* RSU_light.ttf in Resources */,
 				FBD64A002094830C00DA81F5 /* PayViewController.xib in Resources */,
 				FBD649DB20944ADF00DA81F5 /* LaunchScreen.storyboard in Resources */,
 				FBD649D820944ADF00DA81F5 /* Assets.xcassets in Resources */,
 				FBD649FB209482F800DA81F5 /* ChatViewController.xib in Resources */,
+				FBD64A0A20948FFF00DA81F5 /* HomeCollectionViewCell.xib in Resources */,
 				FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */,
 				FBD649F7209482D600DA81F5 /* Info.plist in Resources */,
 				FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */,
@@ -215,6 +234,7 @@
 				FBD649E920947C1200DA81F5 /* CustomTabbarViewController.swift in Sources */,
 				FBD649FA209482F800DA81F5 /* ChatViewController.swift in Sources */,
 				FBD649E42094750200DA81F5 /* HomeViewController.swift in Sources */,
+				FBD64A0920948FFF00DA81F5 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

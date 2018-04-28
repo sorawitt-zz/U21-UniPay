@@ -10,26 +10,35 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var featureCollectionView: UICollectionView!
+    let featureTitle: [String] = ["ลงทะเบียน", "ส่งใบคำร้อง", "คำชะค่าหอพัก", "ชำระค่าปรับ", "บริจาค"]
+    let featureIcon: [String] = [""]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupCollectionView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func setupCollectionView() {
+        let nibCell = UINib(nibName: "HomeCollectionViewCell", bundle: nil)
+        featureCollectionView.register(nibCell, forCellWithReuseIdentifier: "HomeCollectionViewCell")
+        
+        featureCollectionView.delegate = self
+        featureCollectionView.dataSource = self
     }
-    */
 
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return featureTitle.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
+        cell.title.text = featureTitle[indexPath.row]
+        //cell.iconFeature.image = UIImage(named: featureIcon[indexPath.row])
+        return cell
+    }
 }

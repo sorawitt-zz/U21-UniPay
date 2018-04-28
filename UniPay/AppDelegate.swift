@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window?.rootViewController = CustomTabbarViewController()
         
-//        let font: UIFont = UIFont(name: "RSU_BOLD", size: 14)!
-//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
-//        
+        let font: UIFont = UIFont(name: "RSU", size: 14)!
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+//
         return true
     }
 
