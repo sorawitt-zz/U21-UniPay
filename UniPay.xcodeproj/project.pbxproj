@@ -15,6 +15,8 @@
 		CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */; };
 		CE547AD92094F27900EB2577 /* DonatedetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */; };
 		CE547ADA2094F27900EB2577 /* DonatedetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */; };
+		CE547ADE2095176B00EB2577 /* paymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ADC2095176B00EB2577 /* paymentCell.swift */; };
+		CE547ADF2095176B00EB2577 /* paymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547ADD2095176B00EB2577 /* paymentCell.xib */; };
 		FB478D392094EC5F005EF672 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D372094EC5F005EF672 /* OTPViewController.xib */; };
 		FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D382094EC5F005EF672 /* OTPViewController.swift */; };
 		FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D3C2094EFF6005EF672 /* BaseViewController.swift */; };
@@ -49,6 +51,8 @@
 		CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedetialViewController.swift; sourceTree = "<group>"; };
 		CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonatedetialViewController.xib; sourceTree = "<group>"; };
+		CE547ADC2095176B00EB2577 /* paymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentCell.swift; sourceTree = "<group>"; };
+		CE547ADD2095176B00EB2577 /* paymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paymentCell.xib; sourceTree = "<group>"; };
 		FB478D372094EC5F005EF672 /* OTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
 		FB478D382094EC5F005EF672 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		FB478D3C2094EFF6005EF672 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -120,8 +124,18 @@
 			children = (
 				CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */,
 				CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */,
+				CE547AE02095177100EB2577 /* paymentCell */,
 			);
 			path = DonateDetial;
+			sourceTree = "<group>";
+		};
+		CE547AE02095177100EB2577 /* paymentCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE547ADC2095176B00EB2577 /* paymentCell.swift */,
+				CE547ADD2095176B00EB2577 /* paymentCell.xib */,
+			);
+			path = paymentCell;
 			sourceTree = "<group>";
 		};
 		FB478D3B2094EC64005EF672 /* OTP */ = {
@@ -310,6 +324,7 @@
 				CE547ADA2094F27900EB2577 /* DonatedetialViewController.xib in Resources */,
 				FBD649F7209482D600DA81F5 /* Info.plist in Resources */,
 				FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */,
+				CE547ADF2095176B00EB2577 /* paymentCell.xib in Resources */,
 				FBD649E52094750200DA81F5 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +346,7 @@
 				FBD649FF2094830C00DA81F5 /* PayViewController.swift in Sources */,
 				FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */,
 				FBD649E920947C1200DA81F5 /* CustomTabbarViewController.swift in Sources */,
+				CE547ADE2095176B00EB2577 /* paymentCell.swift in Sources */,
 				FBD649FA209482F800DA81F5 /* ChatViewController.swift in Sources */,
 				CE547AC02094AD8300EB2577 /* ShareViewController.swift in Sources */,
 				FBD649E42094750200DA81F5 /* HomeViewController.swift in Sources */,
