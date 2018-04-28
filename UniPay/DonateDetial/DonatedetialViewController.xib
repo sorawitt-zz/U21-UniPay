@@ -100,13 +100,13 @@
                                             <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="฿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-cX-jFC">
-                                            <rect key="frame" x="282.5" y="119" width="10" height="26.5"/>
+                                            <rect key="frame" x="282.5" y="116" width="10" height="26.5"/>
                                             <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="กรอกจำนวนเงิน" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-KR-UH6">
-                                            <rect key="frame" x="77.5" y="120" width="200" height="24.5"/>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="กรอกจำนวนเงิน" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-KR-UH6" customClass="TextField" customModule="UniPay" customModuleProvider="target">
+                                            <rect key="frame" x="77.5" y="113.5" width="200" height="31"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="3FT-87-p4r"/>
                                             </constraints>
@@ -124,17 +124,9 @@
                                                 <constraint firstAttribute="height" constant="2" id="Ifi-E2-1Vv"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k5G-pU-tVD">
-                                            <rect key="frame" x="135" y="20" width="85" height="85"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="85" id="0w7-Sv-57N"/>
-                                                <constraint firstAttribute="width" constant="85" id="WoU-c6-rEP"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.97647058823529409" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="k5G-pU-tVD" firstAttribute="top" secondItem="etZ-hI-Ol3" secondAttribute="top" constant="20" id="2LL-eA-jof"/>
                                         <constraint firstItem="Ad0-jM-S4U" firstAttribute="leading" secondItem="etZ-hI-Ol3" secondAttribute="leading" id="3qp-Jn-eL9"/>
                                         <constraint firstItem="s9c-cX-jFC" firstAttribute="centerY" secondItem="dUT-KR-UH6" secondAttribute="centerY" id="KLk-An-rG5"/>
                                         <constraint firstItem="dUT-KR-UH6" firstAttribute="centerX" secondItem="etZ-hI-Ol3" secondAttribute="centerX" id="Pmy-D7-ecw"/>
@@ -144,9 +136,7 @@
                                         <constraint firstItem="s9c-cX-jFC" firstAttribute="leading" secondItem="dUT-KR-UH6" secondAttribute="trailing" constant="5" id="Xhm-Io-GZc"/>
                                         <constraint firstItem="05T-kh-uCB" firstAttribute="leading" secondItem="etZ-hI-Ol3" secondAttribute="leading" constant="10" id="dRv-rF-UfI"/>
                                         <constraint firstItem="05T-kh-uCB" firstAttribute="top" secondItem="Ad0-jM-S4U" secondAttribute="bottom" constant="17" id="iDJ-yA-qcq"/>
-                                        <constraint firstItem="k5G-pU-tVD" firstAttribute="centerX" secondItem="etZ-hI-Ol3" secondAttribute="centerX" id="qbn-XR-Xal"/>
                                         <constraint firstItem="Ad0-jM-S4U" firstAttribute="top" secondItem="dUT-KR-UH6" secondAttribute="bottom" constant="17" id="sBa-yg-zoy"/>
-                                        <constraint firstItem="dUT-KR-UH6" firstAttribute="top" secondItem="k5G-pU-tVD" secondAttribute="bottom" constant="15" id="wLK-Iw-Wss"/>
                                     </constraints>
                                 </view>
                             </subviews>
