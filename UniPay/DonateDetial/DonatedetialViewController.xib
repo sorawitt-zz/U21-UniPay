@@ -18,6 +18,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonatedetialViewController" customModule="UniPay" customModuleProvider="target">
             <connections>
                 <outlet property="detailDonateView" destination="etZ-hI-Ol3" id="r8H-Dv-6cK"/>
+                <outlet property="moneyLabel1" destination="hNX-U1-hkh" id="Bmg-8s-mio"/>
+                <outlet property="moneyLabel2" destination="sOc-jK-XQe" id="3CH-6T-Av9"/>
+                <outlet property="moneyTextField" destination="dUT-KR-UH6" id="tfV-9U-PTj"/>
+                <outlet property="nameLabel" destination="DUm-aP-vHQ" id="QHk-nK-v85"/>
+                <outlet property="paymentTableView" destination="UKE-ZO-wmn" id="Eik-mJ-wQG"/>
                 <outlet property="paymentView" destination="ddK-ml-ROu" id="UON-2Z-i6e"/>
                 <outlet property="submitBtn" destination="gUt-Bz-wcM" id="CMZ-oK-ANj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -83,8 +88,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNX-U1-hkh">
-                                                            <rect key="frame" x="275.5" y="0.0" width="59.5" height="26.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNX-U1-hkh">
+                                                            <rect key="frame" x="303" y="0.0" width="32" height="26.5"/>
                                                             <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -108,6 +113,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="valueChangeMoney" destination="-1" eventType="editingChanged" id="AL5-gP-8Sq"/>
+                                            </connections>
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ad0-jM-S4U">
                                             <rect key="frame" x="0.0" y="161.5" width="355" height="2"/>
@@ -157,20 +165,24 @@
                                     <rect key="frame" x="10" y="10" width="355" height="275"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ช่องทางการชำระเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdn-NG-7KS">
-                                            <rect key="frame" x="10" y="10" width="118" height="25"/>
-                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                                            <rect key="frame" x="10" y="10" width="125" height="26.5"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UKE-ZO-wmn">
-                                            <rect key="frame" x="10" y="37" width="335" height="228"/>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UKE-ZO-wmn">
+                                            <rect key="frame" x="10" y="46.5" width="335" height="218.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="DYy-db-vQk"/>
+                                                <outlet property="delegate" destination="-1" id="OKq-by-BX4"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="UKE-ZO-wmn" secondAttribute="trailing" constant="10" id="J9V-oK-Oom"/>
-                                        <constraint firstItem="UKE-ZO-wmn" firstAttribute="top" secondItem="bdn-NG-7KS" secondAttribute="bottom" constant="2" id="i03-9A-ZNu"/>
+                                        <constraint firstItem="UKE-ZO-wmn" firstAttribute="top" secondItem="bdn-NG-7KS" secondAttribute="bottom" constant="10" id="i03-9A-ZNu"/>
                                         <constraint firstItem="bdn-NG-7KS" firstAttribute="leading" secondItem="ddK-ml-ROu" secondAttribute="leading" constant="10" id="mjV-jF-0p5"/>
                                         <constraint firstItem="bdn-NG-7KS" firstAttribute="top" secondItem="ddK-ml-ROu" secondAttribute="top" constant="10" id="mt9-GB-A3E"/>
                                         <constraint firstAttribute="bottom" secondItem="UKE-ZO-wmn" secondAttribute="bottom" constant="10" id="tlG-ac-YA5"/>
@@ -201,16 +213,16 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BwA-tF-O9d">
-                                    <rect key="frame" x="22" y="19.5" width="80.5" height="20.5"/>
+                                    <rect key="frame" x="22" y="19.5" width="48.5" height="20.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-jK-XQe">
-                                            <rect key="frame" x="0.0" y="0.0" width="66.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-jK-XQe">
+                                            <rect key="frame" x="0.0" y="0.0" width="34.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="฿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU1-xi-yXX">
-                                            <rect key="frame" x="69.5" y="0.0" width="11" height="20.5"/>
+                                            <rect key="frame" x="37.5" y="0.0" width="11" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -237,6 +249,9 @@
                                     <state key="normal" title="ยืนยัน">
                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="submitPressed:" destination="-1" eventType="touchUpInside" id="cUf-5B-dKA"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
