@@ -58,7 +58,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            break
+            self.tabBarController?.navigationController?.pushViewController(RegistrarEduViewController(), animated: true)
         case 1:
             break
         case 2:
