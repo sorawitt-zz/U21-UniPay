@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>RSU_Regular.ttf</string>
+		<string>RSU_BOLD.ttf</string>
 		<string>RSU_light.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
