@@ -12,7 +12,7 @@ class MeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ self.tabBarController?.navigationItem.title = "ฉัน"
         // Do any additional setup after loading the view.
     }
 

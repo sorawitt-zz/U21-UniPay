@@ -38,8 +38,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="รายละเอียด - ค่าน้ำ 10 บาท" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01Z-Ty-tw1">
-                            <rect key="frame" x="8" y="49.5" width="359" height="26.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="รายละเอียด " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01Z-Ty-tw1">
+                            <rect key="frame" x="8" y="49.5" width="359" height="27"/>
                             <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

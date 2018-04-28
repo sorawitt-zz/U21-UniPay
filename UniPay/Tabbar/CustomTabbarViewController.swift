@@ -53,9 +53,5 @@ class CustomTabbarViewController: UITabBarController {
         setupTabBar()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
 
 }

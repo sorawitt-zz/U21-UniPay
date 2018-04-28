@@ -12,18 +12,7 @@ class PayViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //scanner = MTBBarcodeScanner(previewView: viewPreview)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        
-        
-        super.viewWillDisappear(animated)
-        self.navigationController?.isNavigationBarHidden = false
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+         self.tabBarController?.navigationItem.title = "จ่าย"
     }
     
     
