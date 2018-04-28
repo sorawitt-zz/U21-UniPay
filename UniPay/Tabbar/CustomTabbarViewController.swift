@@ -14,22 +14,28 @@ class CustomTabbarViewController: UITabBarController {
         super.viewDidLoad()
 
         
+   
+    }
+    
+    func setupTabBar() {
         let homeVC = UINavigationController(rootViewController: HomeViewController())
-        homeVC.title = "หน้าแรก"
+       // let homeVC = HomeViewController()
+        homeVC.tabBarItem.title = "หน้าแรก"
+        
         homeVC.tabBarItem.image = UIImage(named: "home")
         
         let chatVC = UINavigationController(rootViewController: ChatViewController())
+        chatVC.tabBarItem.image = UIImage(named: "chat")
         chatVC.title = "แชท"
         
         let payVC = UINavigationController(rootViewController: PayViewController())
-        payVC.title = "จ่าย"
+        payVC.tabBarItem.title = "จ่าย"
+        payVC.tabBarItem.image = UIImage(named: "qr")
         
         let meVC = UINavigationController(rootViewController: MeViewController())
-        meVC.title = "ฉัน"
+        meVC.tabBarItem.title = "ฉัน"
+        meVC.tabBarItem.image = UIImage(named: "me")
         
-//        let guVC = UINavigationController(rootViewController: ShareViewController())
-//        meVC.title = "หน้าแรก บุค"
-
         
         viewControllers = [homeVC, chatVC, payVC, meVC]
         tabBar.tintColor = UIColor(red:0.03, green:0.79, blue:0.66, alpha:1.0)
@@ -41,5 +47,11 @@ class CustomTabbarViewController: UITabBarController {
         tabBar.layer.addSublayer(topBorder)
         tabBar.clipsToBounds = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupTabBar()
+    }
+    
 
 }

@@ -20,6 +20,7 @@
             <connections>
                 <outlet property="featureCollectionView" destination="ddk-mI-8JY" id="4pC-iw-SL5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPanel" destination="ehB-jP-zVf" id="PcW-d3-2Gw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,25 +29,48 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcg-hp-93Z">
-                    <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                    <rect key="frame" x="0.0" y="50" width="375" height="200"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgI-ME-1hi">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สวัสดี" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-gR-ctz">
-                                    <rect key="frame" x="38" y="37" width="33" height="23.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="สวัสดี !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-gR-ctz">
+                                    <rect key="frame" x="38" y="20" width="40.5" height="23.5"/>
                                     <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ประภัสสร สีวันนา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWz-Qy-Wsu">
-                                    <rect key="frame" x="38" y="62.5" width="108" height="26.5"/>
+                                    <rect key="frame" x="38" y="45" width="108" height="26.5"/>
                                     <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="18"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehB-jP-zVf">
-                                    <rect key="frame" x="38" y="95" width="305" height="81"/>
+                                    <rect key="frame" x="38" y="77.5" width="305" height="98.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ยอดเงินคงเหลือ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bQ-XC-GvZ">
+                                            <rect key="frame" x="18" y="8" width="105" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ออมเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bJ-Mf-5oB">
+                                            <rect key="frame" x="237" y="8" width="52" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999 ฿" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S54-rg-vbT">
+                                            <rect key="frame" x="56" y="28" width="67" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </subviews>
@@ -58,7 +82,7 @@
                                 <constraint firstItem="ehB-jP-zVf" firstAttribute="leading" secondItem="WWz-Qy-Wsu" secondAttribute="leading" id="KGB-FC-Rgx"/>
                                 <constraint firstAttribute="height" constant="128" id="Sbr-MN-lbJ"/>
                                 <constraint firstItem="WWz-Qy-Wsu" firstAttribute="leading" secondItem="uJ0-gR-ctz" secondAttribute="leading" id="Yeg-A7-ffQ"/>
-                                <constraint firstItem="uJ0-gR-ctz" firstAttribute="top" secondItem="MgI-ME-1hi" secondAttribute="top" constant="37" id="buF-T9-b9w"/>
+                                <constraint firstItem="uJ0-gR-ctz" firstAttribute="top" secondItem="MgI-ME-1hi" secondAttribute="top" constant="20" id="d7Q-6M-Ne6"/>
                                 <constraint firstItem="ehB-jP-zVf" firstAttribute="top" secondItem="WWz-Qy-Wsu" secondAttribute="bottom" constant="6" id="e8E-LX-jtG"/>
                                 <constraint firstAttribute="trailing" secondItem="ehB-jP-zVf" secondAttribute="trailing" constant="32" id="thE-Al-Z6u"/>
                             </constraints>
@@ -69,20 +93,20 @@
                         <constraint firstAttribute="height" constant="200" id="0Yv-Yo-ABY"/>
                         <constraint firstAttribute="trailing" secondItem="MgI-ME-1hi" secondAttribute="trailing" id="5kZ-Vn-8l5"/>
                         <constraint firstItem="MgI-ME-1hi" firstAttribute="leading" secondItem="qcg-hp-93Z" secondAttribute="leading" id="R11-9H-UMi"/>
-                        <constraint firstItem="MgI-ME-1hi" firstAttribute="top" secondItem="qcg-hp-93Z" secondAttribute="top" id="SwW-eA-QiC"/>
+                        <constraint firstItem="MgI-ME-1hi" firstAttribute="top" secondItem="qcg-hp-93Z" secondAttribute="top" id="XHx-qk-FY8"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-pb-hsn">
-                    <rect key="frame" x="8" y="228" width="359" height="439"/>
+                    <rect key="frame" x="8" y="258" width="359" height="409"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXB-zL-f9a">
-                            <rect key="frame" x="0.0" y="0.0" width="359" height="39"/>
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="36.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-mI-8JY">
-                            <rect key="frame" x="0.0" y="49" width="359" height="390"/>
+                            <rect key="frame" x="0.0" y="46.5" width="359" height="362.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="eF3-BW-e4e">
                                 <size key="itemSize" width="100" height="100"/>
@@ -105,15 +129,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="NaY-pb-hsn" firstAttribute="top" secondItem="qcg-hp-93Z" secondAttribute="bottom" constant="8" id="Ay7-gv-R8T"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NaY-pb-hsn" secondAttribute="trailing" constant="8" id="Bob-ak-uf3"/>
-                <constraint firstItem="qcg-hp-93Z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bza-aa-LQV"/>
                 <constraint firstItem="NaY-pb-hsn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="PRW-K9-W0Q"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NaY-pb-hsn" secondAttribute="bottom" id="U2y-dI-9no"/>
                 <constraint firstItem="qcg-hp-93Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aIM-E0-M3Q"/>
-                <constraint firstItem="NaY-pb-hsn" firstAttribute="top" secondItem="qcg-hp-93Z" secondAttribute="bottom" constant="8" id="f9T-RZ-RRm"/>
+                <constraint firstItem="qcg-hp-93Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="dKw-sO-Ezy"/>
                 <constraint firstAttribute="trailing" secondItem="qcg-hp-93Z" secondAttribute="trailing" id="kAi-6b-8sb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

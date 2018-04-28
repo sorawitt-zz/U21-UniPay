@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RSU_light.ttf">
+            <string>RSU-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrarEduViewController" customModule="UniPay" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="exT-ci-rQ1">
+                    <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ccf-AZ-18f"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eSi-gg-GQL">
+                    <rect key="frame" x="8" y="76" width="359" height="583"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายวิชาที่เปิดสอน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-jg-pCY">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="kps-tT-tXV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3lj-jX-0un">
+                            <rect key="frame" x="0.0" y="29" width="359" height="160"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายวิชาที่เลือก" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBt-kU-rBI">
+                            <rect key="frame" x="0.0" y="198" width="359" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="jxf-5W-yTm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TbZ-WJ-vjn">
+                            <rect key="frame" x="0.0" y="227" width="359" height="180"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y3G-ma-2yB">
+                            <rect key="frame" x="0.0" y="416" width="359" height="110"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pPh-Ym-0z4">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="55"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวนหน่วยกิจรวม" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSR-he-yjO">
+                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="55"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xw-G9-zB1">
+                                            <rect key="frame" x="179.5" y="0.0" width="179.5" height="55"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wIm-Ek-9Te">
+                                    <rect key="frame" x="0.0" y="55" width="359" height="55"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ยอดการชำระ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i4-A7-fjG">
+                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="55"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13,100 ฿" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvl-Sw-0cM">
+                                            <rect key="frame" x="179.5" y="0.0" width="179.5" height="55"/>
+                                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-5B-mQZ">
+                            <rect key="frame" x="0.0" y="535" width="359" height="48"/>
+                            <color key="backgroundColor" red="0.027450980390000001" green="0.79215686269999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="X1L-da-wUG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="RSU-Light" family="RSU" pointSize="17"/>
+                            <state key="normal" title="ยืนยันการลงทะเบียน">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3lj-jX-0un" firstAttribute="height" secondItem="q8j-jg-pCY" secondAttribute="height" multiplier="8" id="Kb0-kp-MhM"/>
+                        <constraint firstItem="TbZ-WJ-vjn" firstAttribute="height" secondItem="cBt-kU-rBI" secondAttribute="height" multiplier="9" id="mTM-SD-071"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eSi-gg-GQL" secondAttribute="bottom" constant="8" id="2ev-FY-TDQ"/>
+                <constraint firstItem="exT-ci-rQ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2lO-8b-TyJ"/>
+                <constraint firstItem="exT-ci-rQ1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="57W-tz-dix"/>
+                <constraint firstItem="eSi-gg-GQL" firstAttribute="top" secondItem="exT-ci-rQ1" secondAttribute="bottom" constant="8" id="7d6-Ei-Zeo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eSi-gg-GQL" secondAttribute="trailing" constant="8" id="CEp-Wt-Tdp"/>
+                <constraint firstItem="eSi-gg-GQL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="O1g-4k-1uc"/>
+                <constraint firstItem="exT-ci-rQ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hjt-gY-jQK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

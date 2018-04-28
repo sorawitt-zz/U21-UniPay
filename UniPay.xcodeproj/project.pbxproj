@@ -15,13 +15,17 @@
 		CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */; };
 		CE547AD92094F27900EB2577 /* DonatedetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */; };
 		CE547ADA2094F27900EB2577 /* DonatedetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */; };
-		CE547ADE2095176B00EB2577 /* paymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ADC2095176B00EB2577 /* paymentCell.swift */; };
-		CE547ADF2095176B00EB2577 /* paymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547ADD2095176B00EB2577 /* paymentCell.xib */; };
 		FB478D392094EC5F005EF672 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D372094EC5F005EF672 /* OTPViewController.xib */; };
 		FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D382094EC5F005EF672 /* OTPViewController.swift */; };
 		FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D3C2094EFF6005EF672 /* BaseViewController.swift */; };
 		FB478D492094F6ED005EF672 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D472094F6ED005EF672 /* BillViewController.swift */; };
 		FB478D4A2094F6ED005EF672 /* BillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D482094F6ED005EF672 /* BillViewController.xib */; };
+		FB478D4E20951A4D005EF672 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D4C20951A4D005EF672 /* LoginViewController.swift */; };
+		FB478D4F20951A4D005EF672 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D4D20951A4D005EF672 /* LoginViewController.xib */; };
+		FB478D5320951A71005EF672 /* RegistrarEduViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D5120951A71005EF672 /* RegistrarEduViewController.swift */; };
+		FB478D5420951A71005EF672 /* RegistrarEduViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D5220951A71005EF672 /* RegistrarEduViewController.xib */; };
+		FB478D582095222F005EF672 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D562095222F005EF672 /* SubjectTableViewCell.swift */; };
+		FB478D592095222F005EF672 /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D572095222F005EF672 /* SubjectTableViewCell.xib */; };
 		FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D020944ADE00DA81F5 /* AppDelegate.swift */; };
 		FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D220944ADE00DA81F5 /* ViewController.swift */; };
 		FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD649D420944ADE00DA81F5 /* Main.storyboard */; };
@@ -51,13 +55,17 @@
 		CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedetialViewController.swift; sourceTree = "<group>"; };
 		CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonatedetialViewController.xib; sourceTree = "<group>"; };
-		CE547ADC2095176B00EB2577 /* paymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentCell.swift; sourceTree = "<group>"; };
-		CE547ADD2095176B00EB2577 /* paymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paymentCell.xib; sourceTree = "<group>"; };
 		FB478D372094EC5F005EF672 /* OTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
 		FB478D382094EC5F005EF672 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		FB478D3C2094EFF6005EF672 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FB478D472094F6ED005EF672 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
 		FB478D482094F6ED005EF672 /* BillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillViewController.xib; sourceTree = "<group>"; };
+		FB478D4C20951A4D005EF672 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB478D4D20951A4D005EF672 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FB478D5120951A71005EF672 /* RegistrarEduViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarEduViewController.swift; sourceTree = "<group>"; };
+		FB478D5220951A71005EF672 /* RegistrarEduViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrarEduViewController.xib; sourceTree = "<group>"; };
+		FB478D562095222F005EF672 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		FB478D572095222F005EF672 /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
 		FBD649CD20944ADE00DA81F5 /* UniPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD649D020944ADE00DA81F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD649D220944ADE00DA81F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,18 +132,8 @@
 			children = (
 				CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */,
 				CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */,
-				CE547AE02095177100EB2577 /* paymentCell */,
 			);
 			path = DonateDetial;
-			sourceTree = "<group>";
-		};
-		CE547AE02095177100EB2577 /* paymentCell */ = {
-			isa = PBXGroup;
-			children = (
-				CE547ADC2095176B00EB2577 /* paymentCell.swift */,
-				CE547ADD2095176B00EB2577 /* paymentCell.xib */,
-			);
-			path = paymentCell;
 			sourceTree = "<group>";
 		};
 		FB478D3B2094EC64005EF672 /* OTP */ = {
@@ -154,6 +152,34 @@
 				FB478D482094F6ED005EF672 /* BillViewController.xib */,
 			);
 			path = Bill;
+			sourceTree = "<group>";
+		};
+		FB478D5020951A5B005EF672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FB478D4C20951A4D005EF672 /* LoginViewController.swift */,
+				FB478D4D20951A4D005EF672 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FB478D5520951A97005EF672 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				FB478D5120951A71005EF672 /* RegistrarEduViewController.swift */,
+				FB478D5220951A71005EF672 /* RegistrarEduViewController.xib */,
+				FB478D5A2095223F005EF672 /* Subject Cell */,
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		FB478D5A2095223F005EF672 /* Subject Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB478D562095222F005EF672 /* SubjectTableViewCell.swift */,
+				FB478D572095222F005EF672 /* SubjectTableViewCell.xib */,
+			);
+			path = "Subject Cell";
 			sourceTree = "<group>";
 		};
 		FBD649C420944ADD00DA81F5 = {
@@ -191,6 +217,8 @@
 				FBD649D420944ADE00DA81F5 /* Main.storyboard */,
 				FBD649DC20944ADF00DA81F5 /* Info.plist */,
 				FB478D3C2094EFF6005EF672 /* BaseViewController.swift */,
+				FB478D5020951A5B005EF672 /* Login */,
+				FB478D5520951A97005EF672 /* Reg */,
 			);
 			path = UniPay;
 			sourceTree = "<group>";
@@ -316,7 +344,9 @@
 				FB478D392094EC5F005EF672 /* OTPViewController.xib in Resources */,
 				FBD649DB20944ADF00DA81F5 /* LaunchScreen.storyboard in Resources */,
 				FBD649D820944ADF00DA81F5 /* Assets.xcassets in Resources */,
+				FB478D592095222F005EF672 /* SubjectTableViewCell.xib in Resources */,
 				FBD649FB209482F800DA81F5 /* ChatViewController.xib in Resources */,
+				FB478D4F20951A4D005EF672 /* LoginViewController.xib in Resources */,
 				FBD64A0A20948FFF00DA81F5 /* HomeCollectionViewCell.xib in Resources */,
 				FB478D4A2094F6ED005EF672 /* BillViewController.xib in Resources */,
 				CE547AC52094C0AC00EB2577 /* DonateViewController.xib in Resources */,
@@ -324,8 +354,8 @@
 				CE547ADA2094F27900EB2577 /* DonatedetialViewController.xib in Resources */,
 				FBD649F7209482D600DA81F5 /* Info.plist in Resources */,
 				FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */,
-				CE547ADF2095176B00EB2577 /* paymentCell.xib in Resources */,
 				FBD649E52094750200DA81F5 /* HomeViewController.xib in Resources */,
+				FB478D5420951A71005EF672 /* RegistrarEduViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +368,7 @@
 			files = (
 				FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */,
 				FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */,
+				FB478D5320951A71005EF672 /* RegistrarEduViewController.swift in Sources */,
 				FB478D492094F6ED005EF672 /* BillViewController.swift in Sources */,
 				FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */,
 				CE547AD42094D2F600EB2577 /* DonateCollectionViewCell.swift in Sources */,
@@ -345,10 +376,11 @@
 				FBD64A042094831C00DA81F5 /* MeViewController.swift in Sources */,
 				FBD649FF2094830C00DA81F5 /* PayViewController.swift in Sources */,
 				FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */,
+				FB478D582095222F005EF672 /* SubjectTableViewCell.swift in Sources */,
 				FBD649E920947C1200DA81F5 /* CustomTabbarViewController.swift in Sources */,
-				CE547ADE2095176B00EB2577 /* paymentCell.swift in Sources */,
 				FBD649FA209482F800DA81F5 /* ChatViewController.swift in Sources */,
 				CE547AC02094AD8300EB2577 /* ShareViewController.swift in Sources */,
+				FB478D4E20951A4D005EF672 /* LoginViewController.swift in Sources */,
 				FBD649E42094750200DA81F5 /* HomeViewController.swift in Sources */,
 				FBD64A0920948FFF00DA81F5 /* HomeCollectionViewCell.swift in Sources */,
 				CE547AC42094C0AC00EB2577 /* DonateViewController.swift in Sources */,
