@@ -29,6 +29,5 @@ class PayViewController: BaseViewController {
     
     @IBAction func handleNextOTP() {
         self.tabBarController?.navigationController?.pushViewController(OTPViewController(), animated: true)
-        // navigationController?.pushViewController(OTPViewController(), animated: true)
     }
 }

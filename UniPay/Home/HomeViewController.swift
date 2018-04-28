@@ -12,7 +12,7 @@ class HomeViewController: BaseViewController {
 
     
     @IBOutlet weak var featureCollectionView: UICollectionView!
-    let featureTitle: [String] = ["ลงทะเบียน", "ส่งใบคำร้อง", "คำชะค่าหอพัก", "ชำระค่าปรับ", "บริจาค"]
+    let featureTitle: [String] = ["ลงทะเบียน", "ส่งใบคำร้อง", "ชำระค่าหอพัก", "ชำระค่าปรับ", "บริจาค"]
     let featureIcon: [String] = [""]
     
     override func viewDidLoad() {

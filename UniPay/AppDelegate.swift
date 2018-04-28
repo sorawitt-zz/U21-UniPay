@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window?.rootViewController = CustomTabbarViewController()
         let vc = UINavigationController(rootViewController: CustomTabbarViewController())
         self.window?.rootViewController = vc
-        let font: UIFont = UIFont(name: "RSU", size: 14)!
+        let font: UIFont = UIFont(name: "RSU", size: 11)!
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
 //
         return true

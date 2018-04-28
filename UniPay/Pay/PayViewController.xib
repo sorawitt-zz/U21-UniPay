@@ -55,7 +55,7 @@
                                 <color key="titleColor" red="0.027450980390000001" green="0.79215686269999996" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="handleNextOTP" destination="-1" eventType="touchUpInside" id="iB2-FS-yye"/>
+                                <action selector="handleNextOTP" destination="-1" eventType="touchUpInside" id="gce-EB-al7"/>
                             </connections>
                         </button>
                     </subviews>
