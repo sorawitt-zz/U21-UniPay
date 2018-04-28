@@ -7,29 +7,31 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PayViewController: UIViewController {
 
+    @IBOutlet weak var viewPreview: UIView!
+    @IBOutlet weak var lblString: UILabel!
+    @IBOutlet weak var btnStartStop: UIButton!
+    
+    var captureSession: AVCaptureSession?
+    var videoPreviewLayer: AVCaptureVideoPreviewLayer!
+    var isReading: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        viewPreview.layer.cornerRadius = 5;
+        btnStartStop.layer.cornerRadius = 5;
+        captureSession = nil;
+        lblString.text = "Barcode discriptio...";
     }
     
+    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension PayViewController: AVCaptureMetadataOutputObjectsDelegate {
+    
 }
