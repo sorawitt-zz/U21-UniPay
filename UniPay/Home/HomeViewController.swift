@@ -8,12 +8,14 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
 
     
     @IBOutlet weak var featureCollectionView: UICollectionView!
     let featureTitle: [String] = ["ลงทะเบียน", "ส่งใบคำร้อง", "ชำระค่าหอพัก", "ชำระค่าปรับ", "บริจาค"]
     let featureIcon: [String] = [""]
+    
+    @IBOutlet weak var viewPanel: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,18 @@ class HomeViewController: BaseViewController {
         
         featureCollectionView.delegate = self
         featureCollectionView.dataSource = self
-    }
+       // self.navigationItem.title = "หน้าแรก"
+        self.tabBarController?.navigationItem.title = "หน้าแรก"
+        
+        viewPanel.layer.cornerRadius = 5
+        viewPanel.backgroundColor = UIColor.white
+        viewPanel.layer.shadowOffset = CGSize(width: 0, height: 2)
+        viewPanel.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.2).cgColor
+        viewPanel.layer.shadowOpacity = 1
+        viewPanel.layer.shadowRadius = 2
+        
+     }
+
 
 }
 

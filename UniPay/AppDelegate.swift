@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let font: UIFont = UIFont(name: "RSU", size: 11)!
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
 //
+        let fontNavi: UIFont = UIFont(name: "RSU", size: 20)!
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.font: fontNavi]
+        self.window?.makeKeyAndVisible()
         return true
     }
 
