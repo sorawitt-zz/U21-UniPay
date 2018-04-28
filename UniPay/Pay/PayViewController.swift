@@ -6,7 +6,7 @@ import Foundation
 class PayViewController: UIViewController {
     
     @IBOutlet weak var viewPreview: UIView!
-    var scanner: MTBBarcodeScanner?
+    
     
     
     override func viewDidLoad() {
@@ -15,7 +15,7 @@ class PayViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.scanner?.stopScanning()
+        
         
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
