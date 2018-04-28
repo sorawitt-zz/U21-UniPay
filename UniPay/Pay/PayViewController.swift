@@ -1,35 +1,34 @@
-//
-//  PayViewController.swift
-//  UniPay
-//
-//  Created by U21 on 4/28/18.
-//  Copyright © 2018 U21. All rights reserved.
-//
+
 
 import UIKit
+import Foundation
 
 class PayViewController: UIViewController {
-
+    
+    @IBOutlet weak var viewPreview: UIView!
+    var scanner: MTBBarcodeScanner?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //scanner = MTBBarcodeScanner(previewView: viewPreview)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillDisappear(_ animated: Bool) {
+        self.scanner?.stopScanning()
+        
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
     }
-    */
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    
+    @IBAction func handleNextOTP() {
+        self.tabBarController?.navigationController?.pushViewController(OTPViewController(), animated: true)
+        // navigationController?.pushViewController(OTPViewController(), animated: true)
+    }
 }
