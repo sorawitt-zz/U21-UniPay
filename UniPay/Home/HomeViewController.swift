@@ -41,4 +41,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         //cell.iconFeature.image = UIImage(named: featureIcon[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            break
+        case 3:
+            break
+        case 4:
+            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+        default:
+            break
+        }
+    }
 }

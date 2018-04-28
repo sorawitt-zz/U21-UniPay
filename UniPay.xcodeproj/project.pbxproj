@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE547AC02094AD8300EB2577 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547ABE2094AD8300EB2577 /* ShareViewController.swift */; };
+		CE547AC12094AD8300EB2577 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547ABF2094AD8300EB2577 /* ShareViewController.xib */; };
+		CE547AC42094C0AC00EB2577 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AC22094C0AC00EB2577 /* DonateViewController.swift */; };
+		CE547AC52094C0AC00EB2577 /* DonateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AC32094C0AC00EB2577 /* DonateViewController.xib */; };
+		CE547AD42094D2F600EB2577 /* DonateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD22094D2F600EB2577 /* DonateCollectionViewCell.swift */; };
+		CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */; };
 		FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D020944ADE00DA81F5 /* AppDelegate.swift */; };
 		FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D220944ADE00DA81F5 /* ViewController.swift */; };
 		FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD649D420944ADE00DA81F5 /* Main.storyboard */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE547ABE2094AD8300EB2577 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		CE547ABF2094AD8300EB2577 /* ShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareViewController.xib; sourceTree = "<group>"; };
+		CE547AC22094C0AC00EB2577 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		CE547AC32094C0AC00EB2577 /* DonateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateViewController.xib; sourceTree = "<group>"; };
+		CE547AD22094D2F600EB2577 /* DonateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCollectionViewCell.xib; sourceTree = "<group>"; };
 		FBD649CD20944ADE00DA81F5 /* UniPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD649D020944ADE00DA81F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD649D220944ADE00DA81F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +72,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE547ABD2094AD4E00EB2577 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				CE547ABE2094AD8300EB2577 /* ShareViewController.swift */,
+				CE547ABF2094AD8300EB2577 /* ShareViewController.xib */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		CE547AC62094C0BB00EB2577 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				CE547AC22094C0AC00EB2577 /* DonateViewController.swift */,
+				CE547AC32094C0AC00EB2577 /* DonateViewController.xib */,
+				CE547AD62094D2FC00EB2577 /* DonateCell */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
+		CE547AD62094D2FC00EB2577 /* DonateCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE547AD22094D2F600EB2577 /* DonateCollectionViewCell.swift */,
+				CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */,
+			);
+			name = DonateCell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FBD649C420944ADD00DA81F5 = {
 			isa = PBXGroup;
 			children = (
@@ -82,15 +123,17 @@
 				FBD649D020944ADE00DA81F5 /* AppDelegate.swift */,
 				FBD649D220944ADE00DA81F5 /* ViewController.swift */,
 				FBD64A0C2094AB5900DA81F5 /* RSU_light.ttf */,
+				CE547AC62094C0BB00EB2577 /* Donate */,
+				CE547ABD2094AD4E00EB2577 /* Share */,
 				FBD649E62094750600DA81F5 /* Home */,
-				FBD649D420944ADE00DA81F5 /* Main.storyboard */,
 				FBD649EB20947C2700DA81F5 /* Tabbar */,
-				FBD649D720944ADF00DA81F5 /* Assets.xcassets */,
-				FBD649D920944ADF00DA81F5 /* LaunchScreen.storyboard */,
-				FBD649DC20944ADF00DA81F5 /* Info.plist */,
 				FBD649FC209482FC00DA81F5 /* Chat */,
 				FBD64A012094830F00DA81F5 /* Pay */,
 				FBD64A062094831F00DA81F5 /* Me */,
+				FBD649D720944ADF00DA81F5 /* Assets.xcassets */,
+				FBD649D920944ADF00DA81F5 /* LaunchScreen.storyboard */,
+				FBD649D420944ADE00DA81F5 /* Main.storyboard */,
+				FBD649DC20944ADF00DA81F5 /* Info.plist */,
 			);
 			path = UniPay;
 			sourceTree = "<group>";
@@ -209,10 +252,13 @@
 			files = (
 				FBD64A0D2094AB5900DA81F5 /* RSU_light.ttf in Resources */,
 				FBD64A002094830C00DA81F5 /* PayViewController.xib in Resources */,
+				CE547AC12094AD8300EB2577 /* ShareViewController.xib in Resources */,
+				CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */,
 				FBD649DB20944ADF00DA81F5 /* LaunchScreen.storyboard in Resources */,
 				FBD649D820944ADF00DA81F5 /* Assets.xcassets in Resources */,
 				FBD649FB209482F800DA81F5 /* ChatViewController.xib in Resources */,
 				FBD64A0A20948FFF00DA81F5 /* HomeCollectionViewCell.xib in Resources */,
+				CE547AC52094C0AC00EB2577 /* DonateViewController.xib in Resources */,
 				FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */,
 				FBD649F7209482D600DA81F5 /* Info.plist in Resources */,
 				FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */,
@@ -228,13 +274,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */,
+				CE547AD42094D2F600EB2577 /* DonateCollectionViewCell.swift in Sources */,
 				FBD64A042094831C00DA81F5 /* MeViewController.swift in Sources */,
 				FBD649FF2094830C00DA81F5 /* PayViewController.swift in Sources */,
 				FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */,
 				FBD649E920947C1200DA81F5 /* CustomTabbarViewController.swift in Sources */,
 				FBD649FA209482F800DA81F5 /* ChatViewController.swift in Sources */,
+				CE547AC02094AD8300EB2577 /* ShareViewController.swift in Sources */,
 				FBD649E42094750200DA81F5 /* HomeViewController.swift in Sources */,
 				FBD64A0920948FFF00DA81F5 /* HomeCollectionViewCell.swift in Sources */,
+				CE547AC42094C0AC00EB2577 /* DonateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
