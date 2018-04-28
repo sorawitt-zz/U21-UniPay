@@ -41,4 +41,19 @@ extension DonateViewController: UICollectionViewDelegate, UICollectionViewDataSo
         //cell.iconFeature.image = UIImage(named: featureIcon[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+        case 1:
+            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+        case 2:
+            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+        case 3:
+            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+        default:
+            break
+        }
+    }
 }
