@@ -171,7 +171,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UKE-ZO-wmn">
-                                            <rect key="frame" x="10" y="46.5" width="335" height="218.5"/>
+                                            <rect key="frame" x="10" y="51.5" width="335" height="213.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <outlet property="dataSource" destination="-1" id="DYy-db-vQk"/>
@@ -182,7 +182,7 @@
                                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="UKE-ZO-wmn" secondAttribute="trailing" constant="10" id="J9V-oK-Oom"/>
-                                        <constraint firstItem="UKE-ZO-wmn" firstAttribute="top" secondItem="bdn-NG-7KS" secondAttribute="bottom" constant="10" id="i03-9A-ZNu"/>
+                                        <constraint firstItem="UKE-ZO-wmn" firstAttribute="top" secondItem="bdn-NG-7KS" secondAttribute="bottom" constant="15" id="i03-9A-ZNu"/>
                                         <constraint firstItem="bdn-NG-7KS" firstAttribute="leading" secondItem="ddK-ml-ROu" secondAttribute="leading" constant="10" id="mjV-jF-0p5"/>
                                         <constraint firstItem="bdn-NG-7KS" firstAttribute="top" secondItem="ddK-ml-ROu" secondAttribute="top" constant="10" id="mt9-GB-A3E"/>
                                         <constraint firstAttribute="bottom" secondItem="UKE-ZO-wmn" secondAttribute="bottom" constant="10" id="tlG-ac-YA5"/>
