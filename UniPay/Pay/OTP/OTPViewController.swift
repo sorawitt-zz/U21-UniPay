@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OTPViewController: UIViewController {
+class OTPViewController: BaseViewController {
     
     @IBOutlet weak var otpTextOne: UITextField!
      @IBOutlet weak var otpTextTwo: UITextField!

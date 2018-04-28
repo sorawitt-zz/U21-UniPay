@@ -3,7 +3,7 @@
 import UIKit
 import Foundation
 
-class PayViewController: UIViewController {
+class PayViewController: BaseViewController {
     
     @IBOutlet weak var viewPreview: UIView!
     

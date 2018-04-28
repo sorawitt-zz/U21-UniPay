@@ -15,6 +15,7 @@
 		CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */; };
 		FB478D392094EC5F005EF672 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D372094EC5F005EF672 /* OTPViewController.xib */; };
 		FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D382094EC5F005EF672 /* OTPViewController.swift */; };
+		FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D3C2094EFF6005EF672 /* BaseViewController.swift */; };
 		FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D020944ADE00DA81F5 /* AppDelegate.swift */; };
 		FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D220944ADE00DA81F5 /* ViewController.swift */; };
 		FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD649D420944ADE00DA81F5 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB478D372094EC5F005EF672 /* OTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
 		FB478D382094EC5F005EF672 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		FB478D3C2094EFF6005EF672 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FBD649CD20944ADE00DA81F5 /* UniPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD649D020944ADE00DA81F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD649D220944ADE00DA81F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				FBD649D920944ADF00DA81F5 /* LaunchScreen.storyboard */,
 				FBD649D420944ADE00DA81F5 /* Main.storyboard */,
 				FBD649DC20944ADF00DA81F5 /* Info.plist */,
+				FB478D3C2094EFF6005EF672 /* BaseViewController.swift */,
 			);
 			path = UniPay;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */,
 				FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */,
 				FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */,
 				CE547AD42094D2F600EB2577 /* DonateCollectionViewCell.swift in Sources */,

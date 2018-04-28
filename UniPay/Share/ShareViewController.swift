@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareViewController: UIViewController {
+class ShareViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

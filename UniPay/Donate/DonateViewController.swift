@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DonateViewController: UIViewController {
+class DonateViewController: BaseViewController {
 
     @IBOutlet weak var scholarCollectionView: UICollectionView!
     let scholarTitle: [String] = ["ทุนการศึกษา", "ทุนสำหรับโรงพยาบาลในมหาวิทยาลัย", "ทุนสำหรับอาสาชมรมพัฒนา", "ทุนสำหรับการกีฬา"]
