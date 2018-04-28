@@ -41,6 +41,10 @@ class OTPViewController: BaseViewController {
         }
         
     }
+    
+    @IBAction func handleNextBill() {
+        self.navigationController?.pushViewController(BillViewController(), animated: true)
+    }
 
     @IBAction func handDeletePin() {
         if sum > 0 {
