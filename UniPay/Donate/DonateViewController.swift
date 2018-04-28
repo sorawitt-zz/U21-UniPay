@@ -45,13 +45,13 @@ extension DonateViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+            self.navigationController?.pushViewController(DonatedetialViewController(), animated: true)
         case 1:
-            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+            self.tabBarController?.navigationController?.pushViewController(DonatedetialViewController(), animated: true)
         case 2:
-            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+            self.tabBarController?.navigationController?.pushViewController(DonatedetialViewController(), animated: true)
         case 3:
-            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
+            self.tabBarController?.navigationController?.pushViewController(DonatedetialViewController(), animated: true)
         default:
             break
         }
