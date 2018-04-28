@@ -26,6 +26,10 @@ class CustomTabbarViewController: UITabBarController {
         let meVC = UINavigationController(rootViewController: MeViewController())
         meVC.title = "ฉัน"
         
+        let guVC = UINavigationController(rootViewController: ShareViewController())
+        meVC.title = "หน้าแรก บุค"
+
+        
         viewControllers = [homeVC, chatVC, payVC, meVC]
         tabBar.tintColor = UIColor.blue
         tabBar.unselectedItemTintColor = UIColor.black
