@@ -28,6 +28,8 @@
 		FB478D592095222F005EF672 /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D572095222F005EF672 /* SubjectTableViewCell.xib */; };
 		FB478D5D20952398005EF672 /* RSU_BOLD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB478D5B20952397005EF672 /* RSU_BOLD.ttf */; };
 		FB478D5E20952398005EF672 /* RSU_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB478D5C20952397005EF672 /* RSU_Regular.ttf */; };
+		FB478D612095245A005EF672 /* paymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D5F20952459005EF672 /* paymentCell.swift */; };
+		FB478D622095245A005EF672 /* paymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D602095245A005EF672 /* paymentCell.xib */; };
 		FBD649D120944ADE00DA81F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D020944ADE00DA81F5 /* AppDelegate.swift */; };
 		FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD649D220944ADE00DA81F5 /* ViewController.swift */; };
 		FBD649D620944ADE00DA81F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD649D420944ADE00DA81F5 /* Main.storyboard */; };
@@ -70,6 +72,8 @@
 		FB478D572095222F005EF672 /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
 		FB478D5B20952397005EF672 /* RSU_BOLD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RSU_BOLD.ttf; sourceTree = "<group>"; };
 		FB478D5C20952397005EF672 /* RSU_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RSU_Regular.ttf; sourceTree = "<group>"; };
+		FB478D5F20952459005EF672 /* paymentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentCell.swift; sourceTree = "<group>"; };
+		FB478D602095245A005EF672 /* paymentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = paymentCell.xib; sourceTree = "<group>"; };
 		FBD649CD20944ADE00DA81F5 /* UniPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD649D020944ADE00DA81F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD649D220944ADE00DA81F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			children = (
 				CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */,
 				CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */,
+				FB478D632095245F005EF672 /* Payment Cell */,
 			);
 			path = DonateDetial;
 			sourceTree = "<group>";
@@ -184,6 +189,15 @@
 				FB478D572095222F005EF672 /* SubjectTableViewCell.xib */,
 			);
 			path = "Subject Cell";
+			sourceTree = "<group>";
+		};
+		FB478D632095245F005EF672 /* Payment Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB478D5F20952459005EF672 /* paymentCell.swift */,
+				FB478D602095245A005EF672 /* paymentCell.xib */,
+			);
+			path = "Payment Cell";
 			sourceTree = "<group>";
 		};
 		FBD649C420944ADD00DA81F5 = {
@@ -363,6 +377,7 @@
 				FBD649F7209482D600DA81F5 /* Info.plist in Resources */,
 				FBD64A052094831C00DA81F5 /* MeViewController.xib in Resources */,
 				FBD649E52094750200DA81F5 /* HomeViewController.xib in Resources */,
+				FB478D622095245A005EF672 /* paymentCell.xib in Resources */,
 				FB478D5420951A71005EF672 /* RegistrarEduViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +404,7 @@
 				FBD649FA209482F800DA81F5 /* ChatViewController.swift in Sources */,
 				CE547AC02094AD8300EB2577 /* ShareViewController.swift in Sources */,
 				FB478D4E20951A4D005EF672 /* LoginViewController.swift in Sources */,
+				FB478D612095245A005EF672 /* paymentCell.swift in Sources */,
 				FBD649E42094750200DA81F5 /* HomeViewController.swift in Sources */,
 				FBD64A0920948FFF00DA81F5 /* HomeCollectionViewCell.swift in Sources */,
 				CE547AC42094C0AC00EB2577 /* DonateViewController.swift in Sources */,
