@@ -18,7 +18,9 @@ class DonatedetialViewController: UIViewController {
     @IBOutlet weak var moneyLabel1: UILabel!
     @IBOutlet weak var moneyLabel2: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+   // @IBOutlet weak var scholarImageView: UIImageView!
     
+
     var scholarName: String?
     let paymentTilte: [String] = ["ชำระผ่าน Uni-Wallet", "ชำระผ่านธนาคาร", "ชำระผ่านบัตรเครดิต", "ชำระผ่าน Internet-Banking"]
     
@@ -63,7 +65,6 @@ class DonatedetialViewController: UIViewController {
         print("ok")
         self.navigationController?.pushViewController(OTPViewController(), animated: true)
     }
-    
 }
 
 extension DonatedetialViewController: UITableViewDelegate, UITableViewDataSource {

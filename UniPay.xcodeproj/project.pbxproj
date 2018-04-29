@@ -15,6 +15,7 @@
 		CE547AD52094D2F600EB2577 /* DonateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */; };
 		CE547AD92094F27900EB2577 /* DonatedetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */; };
 		CE547ADA2094F27900EB2577 /* DonatedetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */; };
+		CE547AE220952E5600EB2577 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE547AE120952E5600EB2577 /* TextField.swift */; };
 		FB478D392094EC5F005EF672 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB478D372094EC5F005EF672 /* OTPViewController.xib */; };
 		FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D382094EC5F005EF672 /* OTPViewController.swift */; };
 		FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB478D3C2094EFF6005EF672 /* BaseViewController.swift */; };
@@ -59,6 +60,7 @@
 		CE547AD32094D2F600EB2577 /* DonateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE547AD72094F27900EB2577 /* DonatedetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedetialViewController.swift; sourceTree = "<group>"; };
 		CE547AD82094F27900EB2577 /* DonatedetialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonatedetialViewController.xib; sourceTree = "<group>"; };
+		CE547AE120952E5600EB2577 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		FB478D372094EC5F005EF672 /* OTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
 		FB478D382094EC5F005EF672 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		FB478D3C2094EFF6005EF672 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			children = (
 				FBD649D020944ADE00DA81F5 /* AppDelegate.swift */,
 				FBD649D220944ADE00DA81F5 /* ViewController.swift */,
+				CE547AE120952E5600EB2577 /* TextField.swift */,
 				FBD64A0C2094AB5900DA81F5 /* RSU_light.ttf */,
 				FB478D5B20952397005EF672 /* RSU_BOLD.ttf */,
 				FB478D5C20952397005EF672 /* RSU_Regular.ttf */,
@@ -392,6 +395,7 @@
 				FB478D3D2094EFF6005EF672 /* BaseViewController.swift in Sources */,
 				FB478D3A2094EC5F005EF672 /* OTPViewController.swift in Sources */,
 				FB478D5320951A71005EF672 /* RegistrarEduViewController.swift in Sources */,
+				CE547AE220952E5600EB2577 /* TextField.swift in Sources */,
 				FB478D492094F6ED005EF672 /* BillViewController.swift in Sources */,
 				FBD649D320944ADE00DA81F5 /* ViewController.swift in Sources */,
 				CE547AD42094D2F600EB2577 /* DonateCollectionViewCell.swift in Sources */,
