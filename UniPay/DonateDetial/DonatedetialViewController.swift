@@ -27,8 +27,9 @@ class DonatedetialViewController: UIViewController {
         setUpView()
         // Do any additional setup after loading the view.
         let nibCell = UINib(nibName: "paymentCell", bundle: nil)
-        paymentTableView.register(nibCell, forCellReuseIdentifier: "paymentCell")
         
+        paymentTableView.register(nibCell, forCellReuseIdentifier: "paymentCell")
+        self.navigationItem.title = "บริจาคทุน"
         self.paymentTableView.separatorStyle = .none
     }
 
@@ -60,6 +61,7 @@ class DonatedetialViewController: UIViewController {
    
     @IBAction func submitPressed(_ sender: Any) {
         print("ok")
+        self.navigationController?.pushViewController(OTPViewController(), animated: true)
     }
     
 }

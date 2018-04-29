@@ -22,6 +22,7 @@ class OTPViewController: BaseViewController {
         sumTextFeild = [otpTextOne, otpTextTwo, otpTextThree, otpTextfour]
         submitBtn.clipsToBounds = true
         submitBtn.layer.cornerRadius = 5
+        self.navigationItem.title = "OTP"
     }
     
     var sum = 0 {

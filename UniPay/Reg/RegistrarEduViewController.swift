@@ -27,13 +27,14 @@ class RegistrarEduViewController: UIViewController {
     var ssub: [subjectModel]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var s1 = subjectModel(id: "001212", name: "ไมโครโพเซสเซอร์", num: "3 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
-        var s2 = subjectModel(id: "57612", name: "ชีววิทยาเบื้องต้น", num: "3 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
-        var s3 = subjectModel(id: "22312", name: "ภาษาอังกฤษ", num: "3 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
+        self.navigationItem.title = "เลือกวิชาเรียน"
+        var s1 = subjectModel(id: "001212", name: "ไมโครโพเซสเซอร์", num: "3 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
+        var s2 = subjectModel(id: "57612", name: "ชีววิทยาเบื้องต้น", num: "3 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
+        var s3 = subjectModel(id: "22312", name: "ภาษาอังกฤษ", num: "3 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
 
-        var s11 = subjectModel(id: "001212", name: "โครงสร้างข้อมูล", num: "2 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
-        var s21 = subjectModel(id: "57612", name: "โมบายแอพพลิเคชั่น", num: "3 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
-        var s31 = subjectModel(id: "22348", name: "ภาษาไทย", num: "3 (0-6)", time1: "จ.09.00-12.00 น.", time2: "พ.08.00-11.00 น.")
+        var s11 = subjectModel(id: "001212", name: "โครงสร้างข้อมูล", num: "2 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
+        var s21 = subjectModel(id: "57612", name: "โมบายแอพพลิเคชั่น", num: "3 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
+        var s31 = subjectModel(id: "22348", name: "ภาษาไทย", num: "3 (0-6)", time1: "จ.09.00-12.00 ", time2: "พ.08.00-11.00")
         
         sub = [s1, s2, s3]
         ssub = [s11, s21, s31]
@@ -48,6 +49,10 @@ class RegistrarEduViewController: UIViewController {
         subjectTableView.dataSource = self
     }
 
+    
+    @IBAction func handleOTP() {
+        self.navigationController?.pushViewController(OTPViewController(), animated: true)
+    }
 
     
     

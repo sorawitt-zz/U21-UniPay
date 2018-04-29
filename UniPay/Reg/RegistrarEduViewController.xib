@@ -116,6 +116,9 @@
                             <state key="normal" title="ยืนยันการลงทะเบียน">
                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="handleOTP" destination="-1" eventType="touchUpInside" id="7tU-Dd-eD3"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

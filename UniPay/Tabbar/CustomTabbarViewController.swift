@@ -14,7 +14,6 @@ class CustomTabbarViewController: UITabBarController {
         super.viewDidLoad()
 
         
-   
     }
     
     func setupTabBar() {

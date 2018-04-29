@@ -11,8 +11,8 @@ import UIKit
 class DonateViewController: BaseViewController {
 
     @IBOutlet weak var scholarCollectionView: UICollectionView!
-    let scholarTitle: [String] = ["ทุนการศึกษา", "ทุนสำหรับโรงพยาบาลในมหาวิทยาลัย", "ทุนสำหรับอาสาชมรมพัฒนา", "ทุนสำหรับการกีฬา"]
-    let featureIcon: [String] = [""]
+    let scholarTitle: [String] = ["ทุนการศึกษา", "ทุนโรงพยาบาล", "ทุนอาสาพัฒนา", "ทุนสำหรับการกีฬา"]
+    let featureIcon: [String] = ["001", "002", "003", "004"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class DonateViewController: BaseViewController {
     }
     
     private func setupCollectionView() {
+        self.navigationItem.title = "เลือกเมนูบริจาคทุน"
         let nibCell = UINib(nibName: "DonateCollectionViewCell", bundle: nil)
         scholarCollectionView.register(nibCell, forCellWithReuseIdentifier: "DonateCollectionViewCell")
         
@@ -38,7 +39,14 @@ extension DonateViewController: UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DonateCollectionViewCell", for: indexPath) as! DonateCollectionViewCell
         cell.title.text = scholarTitle[indexPath.row]
-        //cell.iconFeature.image = UIImage(named: featureIcon[indexPath.row])
+        cell.imageScholar.image = UIImage(named: featureIcon[indexPath.row])
+        cell.layer.cornerRadius = 5
+        cell.backgroundColor = UIColor.white
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.2).cgColor
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowRadius = 2
+
         return cell
     }
     

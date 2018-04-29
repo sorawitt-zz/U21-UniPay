@@ -11,24 +11,25 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
-    @IBOutlet weak var featureCollectionView: UICollectionView!
-    let featureTitle: [String] = ["ลงทะเบียน", "ส่งใบคำร้อง", "ชำระค่าหอพัก", "ชำระค่าปรับ", "บริจาค"]
-    let featureIcon: [String] = [""]
     
     @IBOutlet weak var viewPanel: UIView!
-    
+    @IBOutlet weak var regBut: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        
+        regBut.layer.shadowOffset = CGSize(width: 0, height: 2)
+        regBut.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.2).cgColor
+        regBut.layer.shadowOpacity = 1
+        regBut.layer.shadowRadius = 2
     }
     
+    
+    
     private func setupCollectionView() {
-        let nibCell = UINib(nibName: "HomeCollectionViewCell", bundle: nil)
-        featureCollectionView.register(nibCell, forCellWithReuseIdentifier: "HomeCollectionViewCell")
+
         
-        featureCollectionView.delegate = self
-        featureCollectionView.dataSource = self
-       // self.navigationItem.title = "หน้าแรก"
         self.tabBarController?.navigationItem.title = "หน้าแรก"
         
         viewPanel.layer.cornerRadius = 5
@@ -40,35 +41,15 @@ class HomeViewController: UIViewController {
         
      }
 
-
-}
-
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return featureTitle.count
+    @IBAction func reg(){
+        let regg = RegistrarEduViewController()
+        self.tabBarController?.navigationController?.pushViewController(regg, animated: true)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-        cell.title.text = featureTitle[indexPath.row]
-        //cell.iconFeature.image = UIImage(named: featureIcon[indexPath.row])
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            self.tabBarController?.navigationController?.pushViewController(RegistrarEduViewController(), animated: true)
-        case 1:
-            break
-        case 2:
-            break
-        case 3:
-            break
-        case 4:
-            self.tabBarController?.navigationController?.pushViewController(DonateViewController(), animated: true)
-        default:
-            break
-        }
+    @IBAction func donation(){
+        let regg = DonateViewController()
+        self.tabBarController?.navigationController?.pushViewController(regg, animated: true)
     }
 }
+
+

@@ -12,8 +12,7 @@ class ChatViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         self.tabBarController?.navigationItem.title = "แชท"
+self.navigationItem.title = "แชท"
         // Do any additional setup after loading the view.
     }
 
